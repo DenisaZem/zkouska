@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Dotazník.css"
 
 const questions = [
   // 0
@@ -38,11 +39,11 @@ const questions = [
   {
     questionText: 'Máš často špatnou náladu?',
     answerOptions: [
-      { answerText: 'Nikdy', nextQuestionIndex: 3 },
-      { answerText: 'Občas', nextQuestionIndex: 3 },
-      { answerText: 'Často', nextQuestionIndex: 3 },
-      { answerText: 'Velmi často', nextQuestionIndex: 3 },
-      { answerText: 'Vždy', nextQuestionIndex: 3 },
+      { answerText: 'Nikdy', nextQuestionIndex: 4 },
+      { answerText: 'Občas', nextQuestionIndex: 4 },
+      { answerText: 'Často', nextQuestionIndex: 4 },
+      { answerText: 'Velmi často', nextQuestionIndex: 4 },
+      { answerText: 'Vždy', nextQuestionIndex: 4 },
     ],
   },
   // 4
@@ -71,7 +72,8 @@ const Dotazník = () => {
   };
 
   return (
-    <div className='app'>
+    <div className='container'>
+      <h1>Dotazník</h1>
       {lastSentence ? (
         <div className='lastSentence-section'>
           Dokončil jsi dotazníček.
