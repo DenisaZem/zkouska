@@ -29,7 +29,6 @@ const Sounds = () => {
       <h1>Sounds</h1>
       <audio ref={audioRef} src="/sound/Calm.mp3" />
       <div className="controls">
-        {/* https://cdn.dribbble.com/users/176039/screenshots/5500538/media/e2b1dd0c440b3fdba253d7d03e0e0874.gif */}
         <img
           className={`obrazek ${isPlaying ? 'playing' : ''}`}
           src="https://media.gettyimages.com/id/1152829238/vector/mindfulness-meditation-and-yoga-background-in-pastel-vintage-colors-with-women-sit-with.jpg?b=1&s=1024x1024&w=gi&k=20&c=_zYSpX6lWyNwsGOtaiDC49YePFSKHot86Z4Ac0mgwwc="
@@ -52,7 +51,6 @@ const Sounds = () => {
       </div>
 
       <audio ref={audioRef} src="/sound/Calm.mp3" />
-      <p>Na GIF mi ty ikony nejdou napojit zatím :/</p>
       <div className="controls">
         <img
           className={`obrazek ${isPlaying ? 'playing' : ''}`}
